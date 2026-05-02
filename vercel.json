@@ -1,6 +1,11 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "outputDirectory": "dist/public",
+  "devCommand": "npm run dev",
+  "env": {},
+  "git": {
+    "deploymentEnabled": true
+  },
   "rewrites": [
     {
       "source": "/(.*)",
