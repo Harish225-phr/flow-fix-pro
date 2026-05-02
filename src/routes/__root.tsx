@@ -29,18 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Demo Tech HIm" },
       { name: "description", content: "Flow Fix Pro is a modern, high-conversion website designed to generate service calls for plumbing and home repair businesses." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
+      { property: "og:title", content: "Demo Tech HIm" },
       { property: "og:description", content: "Flow Fix Pro is a modern, high-conversion website designed to generate service calls for plumbing and home repair businesses." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Demo Tech HIm" },
       { name: "twitter:description", content: "Flow Fix Pro is a modern, high-conversion website designed to generate service calls for plumbing and home repair businesses." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1166434e-3a7c-4b1d-96b7-bf42133a1801/id-preview-9475fae8--1e598a5d-be51-4870-8e41-3810d86a272d.lovable.app-1777718561646.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1166434e-3a7c-4b1d-96b7-bf42133a1801/id-preview-9475fae8--1e598a5d-be51-4870-8e41-3810d86a272d.lovable.app-1777718561646.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/FTJMGneYkYc7c7qU18TvN5FL0L92/social-images/social-1777720776900-1._Main_LOGO.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/FTJMGneYkYc7c7qU18TvN5FL0L92/social-images/social-1777720776900-1._Main_LOGO.webp" },
     ],
     links: [
       {
