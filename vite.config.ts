@@ -64,11 +64,15 @@ export default defineConfig(async ({ command, mode }) => {
 	internalPlugins.push(devServerFnErrorLogger());
 
 	if (command === "build") {
+		// Disable Cloudflare adapter for Vercel compatibility.
+		// Intentionally do not register the Cloudflare plugin so the build
+		// outputs a Node.js-compatible SSR bundle instead of Cloudflare Workers.
 		try {
-			const { cloudflare } = await import("@cloudflare/vite-plugin");
-			internalPlugins.push(cloudflare({ viteEnvironment: { name: "ssr" } }));
+			// Attempt to import only to avoid hard failures in environments
+			// where the package isn't installed; but do not add the plugin.
+			await import("@cloudflare/vite-plugin").catch(() => {});
 		} catch {
-			// Cloudflare plugin is optional for local development.
+			// ignore
 		}
 	}
 
